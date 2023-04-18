@@ -11,6 +11,7 @@ This repo is to list down some good resources of shell scripting 💪🏻
     * [06-Reading Inputs](https://www.geeksforgeeks.org/bash-script-read-user-input/)
     * [07-Arithmetic Operations in Shell Script](https://www.geeksforgeeks.org/bash-script-arithmetic-operators/)
     * [08-`bc` in Linux](https://opensource.com/article/20/7/bc-math)
+* 02-Control Flow in Shell    
     * []()
     * []()
     * []()
