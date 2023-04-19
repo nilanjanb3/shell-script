@@ -12,11 +12,12 @@ This repo is to list down some good resources of shell scripting 💪🏻
     * [07-Arithmetic Operations in Shell Script](https://www.geeksforgeeks.org/bash-script-arithmetic-operators/)
     * [08-`bc` in Linux](https://opensource.com/article/20/7/bc-math)
 * 02-Control Flow in Shell    
-    * []()
-    * []()
-    * []()
-    * []()
-    * []()
+    * [01-if else in shell](https://www.digitalocean.com/community/tutorials/if-else-in-shell-scripts)
+    * [02-else-if in shell](https://www.tutorialspoint.com/unix/if-elif-statement.htm)
+    * [03-for loop in shell](https://www.javatpoint.com/for-loop-shell-scripting)
+    * [04-while loop in shell](https://www.tutorialspoint.com/unix/while-loop.htm)
+    * [05-case in shell](https://www.tutorialspoint.com/unix/case-esac-statement.htm)
+* 03-Shebang
     * []()
     * []()
     * []()
