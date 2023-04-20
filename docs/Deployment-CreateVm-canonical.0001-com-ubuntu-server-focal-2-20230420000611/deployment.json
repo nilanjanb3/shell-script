@@ -1,0 +1,257 @@
+{
+  "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20230420000611",
+  "name": "CreateVm-canonical.0001-com-ubuntu-server-focal-2-20230420000611",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourcegroups/ODL-azure-922847/providers/Microsoft.Compute/virtualMachines/vm1",
+    "marketplaceItemId": "Microsoft.VirtualMachine-ARM",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "17689608705421756363",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "centralindia"
+      },
+      "networkInterfaceName": {
+        "type": "String",
+        "value": "vm1726"
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "vm1-nsg"
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "SSH",
+            "properties": {
+              "priority": 300,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "22"
+            }
+          },
+          {
+            "name": "HTTP",
+            "properties": {
+              "priority": 320,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "80"
+            }
+          },
+          {
+            "name": "HTTPS",
+            "properties": {
+              "priority": 340,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "443"
+            }
+          }
+        ]
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "default"
+      },
+      "virtualNetworkName": {
+        "type": "String",
+        "value": "vm1-vnet"
+      },
+      "addressPrefixes": {
+        "type": "Array",
+        "value": [
+          "10.0.0.0/16"
+        ]
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "default",
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            }
+          }
+        ]
+      },
+      "publicIpAddressName": {
+        "type": "String",
+        "value": "vm1-ip"
+      },
+      "publicIpAddressType": {
+        "type": "String",
+        "value": "Static"
+      },
+      "publicIpAddressSku": {
+        "type": "String",
+        "value": "Standard"
+      },
+      "pipDeleteOption": {
+        "type": "String",
+        "value": "Detach"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "vm1"
+      },
+      "virtualMachineComputerName": {
+        "type": "String",
+        "value": "vm1"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "ODL-azure-922847"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "Standard_LRS"
+      },
+      "osDiskDeleteOption": {
+        "type": "String",
+        "value": "Delete"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_B2s"
+      },
+      "nicDeleteOption": {
+        "type": "String",
+        "value": "Detach"
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "nilanjan"
+      },
+      "adminPublicKey": {
+        "type": "SecureString"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2023-04-19T18:42:16.6481431Z",
+    "duration": "PT59.9352709S",
+    "correlationId": "6cf55bbe-24e6-444c-9ce9-17f7a46ed653",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "centralindia"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "centralindia"
+            ]
+          },
+          {
+            "resourceType": "virtualNetworks",
+            "locations": [
+              "centralindia"
+            ]
+          },
+          {
+            "resourceType": "publicIpAddresses",
+            "locations": [
+              "centralindia"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "centralindia"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/networkSecurityGroups/vm1-nsg",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "vm1-nsg"
+          },
+          {
+            "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/virtualNetworks/vm1-vnet",
+            "resourceType": "Microsoft.Network/virtualNetworks",
+            "resourceName": "vm1-vnet"
+          },
+          {
+            "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/publicIpAddresses/vm1-ip",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "vm1-ip"
+          }
+        ],
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/networkInterfaces/vm1726",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "vm1726"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/networkInterfaces/vm1726",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "vm1726"
+          }
+        ],
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Compute/virtualMachines/vm1",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "vm1"
+      }
+    ],
+    "outputs": {
+      "adminUsername": {
+        "type": "String",
+        "value": "nilanjan"
+      }
+    },
+    "outputResources": [
+      {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Compute/virtualMachines/vm1"
+      },
+      {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/networkInterfaces/vm1726"
+      },
+      {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/networkSecurityGroups/vm1-nsg"
+      },
+      {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/publicIpAddresses/vm1-ip"
+      },
+      {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/virtualNetworks/vm1-vnet"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

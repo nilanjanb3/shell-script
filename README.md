@@ -18,9 +18,9 @@ This repo is to list down some good resources of shell scripting 💪🏻
     * [04-while loop in shell](https://www.tutorialspoint.com/unix/while-loop.htm)
     * [05-case in shell](https://www.tutorialspoint.com/unix/case-esac-statement.htm)
 * 03-Shebang
-    * []()
-    * []()
-    * []()
+    * [01-What is Shebang](https://www.tutorialspoint.com/using-shebang-hash-in-linux-scripts)
+    * [02-Exit codes in linux](https://shapeshed.com/unix-exit-codes/)
+    * [03-Function in Shell](https://www.tutorialspoint.com/unix/unix-shell-functions.htm)
     * []()
     * []()
     * []()

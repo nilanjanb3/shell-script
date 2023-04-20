@@ -1,0 +1,99 @@
+[
+  {
+    "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20230420000611/operations/DA36E21919E1FD38",
+    "operationId": "DA36E21919E1FD38",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-04-19T18:42:16.3304654Z",
+      "duration": "PT41.8668342S",
+      "trackingId": "58f67824-eec5-42bf-ba29-5eb2a7fe0366",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Compute/virtualMachines/vm1",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "vm1"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20230420000611/operations/601EAC0D6F8E5A5F",
+    "operationId": "601EAC0D6F8E5A5F",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-04-19T18:41:45.1473007Z",
+      "duration": "PT10.6836695S",
+      "trackingId": "4ffe6dd6-a3b6-4508-948d-8f9887c75c80",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/networkInterfaces/vm1726",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "vm1726"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20230420000611/operations/B6BC6ACB7EA5F618",
+    "operationId": "B6BC6ACB7EA5F618",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-04-19T18:41:33.963067Z",
+      "duration": "PT15.4321155S",
+      "trackingId": "323f89c0-216a-4f8a-a690-51e4157b4136",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/virtualNetworks/vm1-vnet",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "vm1-vnet"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20230420000611/operations/96EA08BE9130410D",
+    "operationId": "96EA08BE9130410D",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-04-19T18:41:34.4276084Z",
+      "duration": "PT15.8966569S",
+      "trackingId": "969646b9-7644-4192-aed0-fd1bf8cce840",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/networkSecurityGroups/vm1-nsg",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "vm1-nsg"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20230420000611/operations/E6C667E3CF1A9F7A",
+    "operationId": "E6C667E3CF1A9F7A",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-04-19T18:41:33.9512056Z",
+      "duration": "PT15.4202541S",
+      "trackingId": "d645c18f-8000-44ec-9580-64813546238c",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Network/publicIpAddresses/vm1-ip",
+        "resourceType": "Microsoft.Network/publicIpAddresses",
+        "resourceName": "vm1-ip"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/b2aec48f-6dad-4d57-ad25-dad521fe74a4/resourceGroups/ODL-azure-922847/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20230420000611/operations/08585196772108367229",
+    "operationId": "08585196772108367229",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2023-04-19T18:42:16.5887464Z",
+      "duration": "PT42.1251152S",
+      "trackingId": "110e3725-8f15-4c48-95e3-34ae51ee5897",
+      "statusCode": "OK"
+    }
+  }
+]
